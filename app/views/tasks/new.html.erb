@@ -1,0 +1,12 @@
+<h1><u>Add a new Task</u></h1>
+<br>
+<%= form_with model: @task do |f| %>
+  - <%= f.label :title %>
+  <%= f.text_field :title, class: "input" %>
+  - <%= f.label :details %>
+  <%= f.text_field :details, class: "input" %>
+  <%= f.submit :submit, class: "btn-form"%>
+<% end %>
+<hr>
+<br>
+<%= link_to "🔙 Back to tasks", tasks_path %>

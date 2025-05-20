@@ -1,0 +1,18 @@
+<h1>My tasks</h1>
+
+<div class="text">
+  <label>- <%= @tasks.title %>
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+</div>
+
+<div class="details">
+  <p><%= @tasks.details %></p>
+</div>
+
+<hr>
+<br>
+<div class="link-to">
+  <%= link_to "📖 View all tasks", tasks_path %>
+</div>
